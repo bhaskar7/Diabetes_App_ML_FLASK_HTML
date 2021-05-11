@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<style>
+body {
+	  background-image: url("{{url_for('static', filename='new.jpg')}}");
+	  background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+	  background-color:powderblue;
+}
+	</style>
+
+	<center> <h1 style="background-color:powderblue;"> Diabetes Test Portal </h1></center>
+        <pre>
+        <form action="/result" method="GET">
+                   Pregnencies: <input type="text" name="pragnencies" /><br/>
+                       Glucose: <input type="text" name="glucose" /><br/>
+                Blood Pressure: <input type="text" name="bp" /><br/>
+                Skin Thickness: <input type="text" name="st" /><br/>
+                       Insulin: <input type="text" name="insulin" /><br/>
+                          BMI : <input type="text" name="bmi" /><br/>
+    Diabetes Pedigree Function: <input type="text" name="dpf" /><br/>
+                           Age: <input type="text" name="age" /><br/>
+			        <input type="submit" value="Click here" />
+        </form></pre>
+</body> 
+</html>
+

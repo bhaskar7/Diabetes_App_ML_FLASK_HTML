@@ -1,0 +1,37 @@
+<body>
+    <center>
+      <h1 style="color:blue;"  >Test Result</h1>
+      <table border = "3">
+          <tr>
+              <th>Pregnency</th>
+              <th>Glucose</th>
+              <th>BloodPressure</th>
+              <th>SkinThickness</th>
+              <th>Insulin</th>
+              <th>BMI</th>
+              <th>DiabetesPedigreeFunction</th>
+              <th>Age</th>
+              <th>Result</th>
+          </tr>
+          <tr>
+              <td>{{ pragnencies  }}</td>
+              <td>{{ glucose }}</td>
+              <td>{{ bp }}</td>
+              <td>{{ st }}</td>
+              <td>{{ insulin }}</td>
+              <td>{{ bmi }}</td>
+              <td>{{ dpf}}</td>
+              <td>{{ age }}</td>
+              <td>Positive</td>
+      </table>
+	
+	<h2  style="color:red; background-color:powderblue;" > You Are a Diabetic Patient </h2>
+
+      <form action="/">
+          <input type=submit value="Submit"/>
+      </form>
+        <img src="{{url_for('static', filename='sad.jpg')}}" height=400 weight=400></img>
+    </center>
+</body>
+
+
